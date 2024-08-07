@@ -4,7 +4,7 @@ const nodes = [
     { id: "Services", group: 3, x: 500, y: 100 },
     { id: "Contact", group: 4, x: 700, y: 100 },
     { id: "Test", group: 5, x: 400, y: 300 },
-    { id: "Rasmus", group: 6, x: 200, y: 300 },
+    { id: "Rasmus", group: 7, x: 200, y: 300 },
     { id: "Espen", group: 6, x: 300, y: 300 }
 ];
 
