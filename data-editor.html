@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .editor {
+            margin: 20px;
+        }
+        .editor-section {
+            margin-bottom: 20px;
+        }
+        .editor-section label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .editor-section input, .editor-section select {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="editor">
+        <h1>Edit Data</h1>
+
+        <div class="editor-section">
+            <h2>Edit Nodes</h2>
+            <label for="node-id">Node ID:</label>
+            <input type="text" id="node-id">
+            <label for="node-group">Group:</label>
+            <input type="number" id="node-group">
+            <label for="node-level">Level:</label>
+            <input type="number" id="node-level">
+            <label for="node-data">Data (comma-separated):</label>
+            <input type="text" id="node-data">
+            <button id="add-node">Add/Update Node</button>
+            <button id="delete-node">Delete Node</button>
+        </div>
+
+        <div class="editor-section">
+            <h2>Edit Links</h2>
+            <label for="link-source">Source:</label>
+            <input type="text" id="link-source">
+            <label for="link-target">Target:</label>
+            <input type="text" id="link-target">
+            <label for="link-value">Value:</label>
+            <input type="number" id="link-value">
+            <button id="add-link">Add/Update Link</button>
+            <button id="delete-link">Delete Link</button>
+        </div>
+
+        <div class="editor-section">
+            <h2>Edit Categories</h2>
+            <label for="category-label">Label:</label>
+            <input type="text" id="category-label">
+            <label for="category-color">Color:</label>
+            <input type="color" id="category-color">
+            <button id="add-category">Add/Update Category</button>
+            <button id="delete-category">Delete Category</button>
+        </div>
+
+        <button id="save-data">Save Data</button>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="data.js"></script>
+    <script src="data-editor.js"></script>
+</body>
+</html>

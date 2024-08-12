@@ -6,17 +6,33 @@
     <title>Move Nodes on Button Click</title>
 </head>
 <body>
-    <button id="moveButton">Hierarkisk</button>
+    <button id="savePositions">Lagre visning</button>
+    <button id="moveToPreDefinedHierarchy">Vis hierarki</button>
+    <button id="moveToPreDefinedTasks">Vis oppgaveløsning</button>
+    <button id="moveToSaved">Gå til lagret visning</button>
+    <div class="control-panel">
+        <label><input type="checkbox" id="toggleShape"> Vis oppgaver</label>
+        <label><input type="checkbox" id="toggleLinks" checked> Vis lenker</label>
+        <label><input type="checkbox" class="group-toggle" value="1" checked> TIGO</label>
+        <label><input type="checkbox" class="group-toggle" value="9" checked> SAVE</label>
+        <label><input type="checkbox" class="group-toggle" value="3" checked> MESA</label>
+        <label><input type="checkbox" class="group-toggle" value="4" checked> BKAN</label>
+        <label><input type="checkbox" class="group-toggle" value="5" checked> ARPU</label>
+    </div>
     <svg id="path-map"></svg>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Link to the D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Load the data.js file -->
+    <script src="data.js"></script>
+
     <!-- Container for the D3 visualization -->
     <div id="path-map" class="path-map"></div>
 
-    <!-- Link to the D3.js library -->
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+
 
     <!-- Link to your custom script that will generate the path map -->
     <script src="path-map.js"></script>
