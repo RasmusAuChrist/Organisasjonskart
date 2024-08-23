@@ -1,29 +1,29 @@
 const preDefinedPositionsHierarchy = {
     "AnnaMaria": { x: 800, y: 50 },
-    "Monica": { x: 600, y: 200 },
+    "Monica": { x: 350, y: 200 },
     "Benny": { x: 700, y: 200 },
     "Eirik": { x: 800, y: 200 },
     "Anette C": { x: 900, y: 200 },
-    "Rasmus": { x: 600, y: 300 },
-    "Espen A": { x: 700, y: 300 },
-    "Gunn L": { x: 800, y: 300 },
-    "Ivar F": { x: 900, y: 300 },
-    "Jan Ragnar G-T": { x: 1000, y: 300 },
-    "Kristin V": { x: 1100, y: 300 },
-    "Thomas O": { x: 1200, y: 300 },
-    "Roger T": { x: 1300, y: 300 },
-    "Grethe F": { x: 1400, y: 300 }
+    "Rasmus": { x: 650, y: 300 },
+    "Espen A": { x: 250, y: 300 },
+    "Gunn L": { x: 300, y: 300 },
+    "Ivar F": { x: 350, y: 300 },
+    "Jan Ragnar G-T": { x: 400, y: 300 },
+    "Kristin V": { x: 250, y: 400 },
+    "Thomas O": { x: 300, y: 400 },
+    "Roger T": { x: 350, y: 400 },
+    "Grethe F": { x: 400, y: 400 }
 };
 
 const preDefinedPositionsTasks = {
-    "AnnaMaria": { x: 100, y: 500 },
-    "Monica": { x: 200, y: 400 },
+    "AnnaMaria": { x: 800, y: 500 },
+    "Monica": { x: 200, y: 200 },
     "Benny": { x: 300, y: 500 },
-    "Eirik": { x: 400, y: 400 },
+    "Eirik": { x: 800, y: 300 },
     "Anette C": { x: 500, y: 500 },
-    "Rasmus": { x: 600, y: 400 },
-    "Espen A": { x: 700, y: 500 },
-    "Gunn L": { x: 800, y: 400 },
+    "Rasmus": { x: 850, y: 300 },
+    "Espen A": { x: 100, y: 500 },
+    "Gunn L": { x: 600, y: 500 },
     "Ivar F": { x: 900, y: 500 },
     "Jan Ragnar G-T": { x: 1000, y: 400 },
     "Kristin V": { x: 1100, y: 500 },
@@ -40,7 +40,7 @@ const categories = [
 ];
 
 const nodes = [
-    { id: "AnnaMaria", level: 1, group: 1, data: [10, 90] },
+    { id: "AnnaMaria", level: 1, group: 1, data: [0, 10, 90] },
     { id: "Monica", level: 2, group: 9, data: [10, 20, 30, 40] },
     { id: "Benny", level: 2, group: 3, data: [10, 20, 30, 40] },
     { id: "Eirik", level: 2, group: 4, data: [10, 20, 40] },
